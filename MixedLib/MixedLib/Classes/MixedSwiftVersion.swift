@@ -7,8 +7,8 @@
 
 import Foundation
 
-class MixedSwiftVersion: NSObject {
-    class func ver() -> String {
+@objc public class MixedSwiftVersion: NSObject {
+    @objc public class func ver() -> String {
         return "0.1.0 （swift in Mixed Lib）"
     }
 }

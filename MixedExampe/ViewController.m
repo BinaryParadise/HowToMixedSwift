@@ -9,6 +9,7 @@
 #import "MixedExampe-Swift.h"
 @import PureOCLib;
 @import PureSwiftLib;
+@import MixedLib;
 
 @interface ViewController ()
 
@@ -28,8 +29,15 @@
     // 使用纯OC库
     NSLog(@"%@", [PureOCLibVersion ver]);
     
-    //使用纯Swift库
+    // 使用纯Swift库
     NSLog(@"%@", [PureSwiftVersion ver]);
+    
+    // 使用混编库中的OC
+    NSLog(@"%@", [MixedOCVersion ver]);
+    
+    // 使用混编库中的swift
+    NSLog(@"%@", [MixedSwiftVersion ver]);
+    
 }
 
 

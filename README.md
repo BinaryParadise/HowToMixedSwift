@@ -99,3 +99,22 @@ import PureOCLib
 print(PureSwiftVersion.ver())
 
 ### 使用混编库
+
+1、OC文件中使用混编库
+
+```objc
+//导入
+@import MixedLib;
+
+print(MixedOCVersion.ver())        
+print(MixedSwiftVersion.ver())
+```
+
+2、swift文件中使用混编库
+
+```swift
+import MixedLib
+
+print(MixedOCVersion.ver())        
+print(MixedSwiftVersion.ver())
+```

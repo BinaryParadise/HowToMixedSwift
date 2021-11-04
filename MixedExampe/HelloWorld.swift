@@ -8,6 +8,7 @@
 import Foundation
 import PureOCLib
 import PureSwiftLib
+import MixedLib
 
 @objc class HelloWorld: NSObject {
     
@@ -20,5 +21,9 @@ import PureSwiftLib
         print(PureOCLibVersion.ver())
         
         print(PureSwiftVersion.ver())
+        
+        print(MixedOCVersion.ver())
+        
+        print(MixedSwiftVersion.ver())
     }
 }
