@@ -1,0 +1,26 @@
+PODS:
+  - MixedLib (0.1.0)
+  - PureOCLib (0.1.0)
+  - PureSwiftLib (0.1.0)
+
+DEPENDENCIES:
+  - MixedLib (from `./MixedLib`)
+  - PureOCLib (from `./PureOCLib`)
+  - PureSwiftLib (from `./PureSwiftLib`)
+
+EXTERNAL SOURCES:
+  MixedLib:
+    :path: "./MixedLib"
+  PureOCLib:
+    :path: "./PureOCLib"
+  PureSwiftLib:
+    :path: "./PureSwiftLib"
+
+SPEC CHECKSUMS:
+  MixedLib: 12132325d2e2201b0cd5d7932a3af6d056d60a92
+  PureOCLib: 682674e80d61d75382a355764590537aebe0864b
+  PureSwiftLib: 67aa48494d56e6f784762f1c740f4bb4c7d64a67
+
+PODFILE CHECKSUM: aa9a9d5b8b1c079d793d931fad05c55253c7a402
+
+COCOAPODS: 1.11.2

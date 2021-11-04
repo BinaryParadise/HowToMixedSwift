@@ -1,0 +1,16 @@
+PODS:
+  - PureOCLib (0.1.0)
+
+DEPENDENCIES:
+  - PureOCLib (from `../`)
+
+EXTERNAL SOURCES:
+  PureOCLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PureOCLib: 682674e80d61d75382a355764590537aebe0864b
+
+PODFILE CHECKSUM: bac4e7fc90e0a6a62f3b3522c46c4d45b1cb2761
+
+COCOAPODS: 1.11.2

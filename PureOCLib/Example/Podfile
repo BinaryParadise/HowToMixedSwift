@@ -1,0 +1,6 @@
+use_frameworks!
+target 'PureOCLib_Tests' do
+  pod 'PureOCLib', :path => '../'
+  
+  
+end

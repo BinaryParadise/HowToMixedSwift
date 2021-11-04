@@ -1,0 +1,16 @@
+PODS:
+  - MixedLib (0.1.0)
+
+DEPENDENCIES:
+  - MixedLib (from `../`)
+
+EXTERNAL SOURCES:
+  MixedLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MixedLib: 12132325d2e2201b0cd5d7932a3af6d056d60a92
+
+PODFILE CHECKSUM: 411a8835651c180677124eb42a9d6f12de907b05
+
+COCOAPODS: 1.11.2

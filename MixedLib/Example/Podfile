@@ -1,0 +1,6 @@
+use_frameworks!
+target 'MixedLib_Tests' do
+  pod 'MixedLib', :path => '../'
+  
+  
+end
