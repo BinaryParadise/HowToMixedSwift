@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import CocoaLumberjack
 
 @objc public class MixedSwiftVersion: NSObject {
-    @objc public class func ver() -> String {
-        return "0.1.0 （swift in Mixed Lib）"
+    @objc public class func ver() -> Void {
+        MixedOCVersion.ver()
+        DDLogDebug("0.1.0 （swift in Mixed Lib）")
     }
 }

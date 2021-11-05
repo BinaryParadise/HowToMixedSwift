@@ -17,6 +17,7 @@
 		C9077ABC2733C0D60042DFF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9077ABB2733C0D60042DFF9 /* main.m */; };
 		C9077AC42733CFC10042DFF9 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9077AC32733CFC10042DFF9 /* HelloWorld.swift */; };
 		C9077AC72733D2020042DFF9 /* Outdate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9077AC62733D2020042DFF9 /* Outdate.m */; };
+		C9077AD82733E4710042DFF9 /* LoggerFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = C9077AD72733E4710042DFF9 /* LoggerFormat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		C9077AC32733CFC10042DFF9 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 		C9077AC52733D2020042DFF9 /* Outdate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Outdate.h; sourceTree = "<group>"; };
 		C9077AC62733D2020042DFF9 /* Outdate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Outdate.m; sourceTree = "<group>"; };
+		C9077AD62733E4710042DFF9 /* LoggerFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggerFormat.h; sourceTree = "<group>"; };
+		C9077AD72733E4710042DFF9 /* LoggerFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoggerFormat.m; sourceTree = "<group>"; };
 		EEF588D14C26E01221750AFB /* Pods_MixedExampe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixedExampe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BCDD1F4882A45FECB3414F /* Pods-MixedExampe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixedExampe.release.xcconfig"; path = "Target Support Files/Pods-MixedExampe/Pods-MixedExampe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +109,8 @@
 				C9077AC32733CFC10042DFF9 /* HelloWorld.swift */,
 				C9077AC52733D2020042DFF9 /* Outdate.h */,
 				C9077AC62733D2020042DFF9 /* Outdate.m */,
+				C9077AD62733E4710042DFF9 /* LoggerFormat.h */,
+				C9077AD72733E4710042DFF9 /* LoggerFormat.m */,
 			);
 			path = MixedExampe;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 				C9077AC72733D2020042DFF9 /* Outdate.m in Sources */,
 				C9077AAB2733C0D30042DFF9 /* AppDelegate.m in Sources */,
 				C9077ABC2733C0D60042DFF9 /* main.m in Sources */,
+				C9077AD82733E4710042DFF9 /* LoggerFormat.m in Sources */,
 				C9077AAE2733C0D30042DFF9 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

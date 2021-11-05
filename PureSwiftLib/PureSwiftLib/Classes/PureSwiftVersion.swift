@@ -6,7 +6,7 @@
 //
 
 @objc public class PureSwiftVersion: NSObject {
-    @objc public class func ver() -> String {
-        return "0.1.0 （Pure Swift Lib）"
+    @objc public class func ver() -> Void {
+        print("0.1.0 （Pure Swift Lib）")
     }
 }

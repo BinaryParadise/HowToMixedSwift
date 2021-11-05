@@ -1,0 +1,6 @@
+use_frameworks!
+target 'PureSwiftLib2_Tests' do
+  pod 'PureSwiftLib2', :path => '../'
+  
+  
+end

@@ -1,0 +1,16 @@
+PODS:
+  - PureSwiftLib2 (0.1.0)
+
+DEPENDENCIES:
+  - PureSwiftLib2 (from `../`)
+
+EXTERNAL SOURCES:
+  PureSwiftLib2:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PureSwiftLib2: 566fa4ceaae5f7dcd9efcf4f5012f9f934b66f5d
+
+PODFILE CHECKSUM: d4f94a61a61cdff421d44373932d5b20d7cd6239
+
+COCOAPODS: 1.11.2

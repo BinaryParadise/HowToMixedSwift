@@ -6,6 +6,10 @@
 //
 
 #import "AppDelegate.h"
+#import "LoggerFormat.h"
+@import CocoaLumberjack;
+
+static DDLogLevel ddLogLevel = DDLogLevelAll;
 
 @interface AppDelegate ()
 
@@ -16,6 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [DDLog.sharedInstance addLogger:DDTTYLogger.sharedInstance];
+    DDTTYLogger.sharedInstance.logFormatter = LoggerFormat.new;
     return YES;
 }
 

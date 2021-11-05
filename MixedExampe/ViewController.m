@@ -27,16 +27,16 @@
     [[[HelloWorld alloc] init] hello];
     
     // 使用纯OC库
-    NSLog(@"%@", [PureOCLibVersion ver]);
+    [PureOCLibVersion ver];
     
     // 使用纯Swift库
-    NSLog(@"%@", [PureSwiftVersion ver]);
+    [PureSwiftVersion ver];
     
     // 使用混编库中的OC
-    NSLog(@"%@", [MixedOCVersion ver]);
+    [MixedOCVersion ver];
     
     // 使用混编库中的swift
-    NSLog(@"%@", [MixedSwiftVersion ver]);
+    [MixedSwiftVersion ver];
     
 }
 

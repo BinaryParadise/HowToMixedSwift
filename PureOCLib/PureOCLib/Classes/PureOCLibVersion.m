@@ -6,11 +6,17 @@
 //
 
 #import "PureOCLibVersion.h"
+@import PureSwiftLib2;
+@import CocoaLumberjack;
+
+static DDLogLevel ddLogLevel = DDLogLevelAll;
+
 
 @implementation PureOCLibVersion
 
-+ (NSString *)ver {
-    return @"0.1.0 （Pure OC Lib）";
++ (void)ver {
+    DDLogDebug(@"0.1.0 （Pure OC Lib）");
+    [PureSwiftVersion2 ver];
 }
 
 @end

@@ -7,10 +7,13 @@
 
 #import "Outdate.h"
 
+@import CocoaLumberjack;
+static DDLogLevel ddLogLevel = DDLogLevelAll;
+
 @implementation Outdate
 
-+ (NSString *)warning {
-    return @"Objective-C is outdated!";
++ (void)warning {
+    DDLogDebug(@"Objective-C is outdated!");
 }
 
 @end

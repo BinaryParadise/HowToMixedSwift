@@ -1,26 +1,49 @@
 PODS:
-  - MixedLib (0.1.0)
-  - PureOCLib (0.1.0)
+  - CocoaLumberjack/Core (3.7.2)
+  - CocoaLumberjack/Swift (3.7.2):
+    - CocoaLumberjack/Core
+  - MixedLib (0.1.0):
+    - CocoaLumberjack/Swift
+  - PureOCLib (0.1.0):
+    - CocoaLumberjack/Swift
+    - PureSwiftLib2
+  - PureOCLib2 (0.1.0)
   - PureSwiftLib (0.1.0)
+  - PureSwiftLib2 (0.1.0):
+    - CocoaLumberjack/Swift
+    - PureOCLib2
 
 DEPENDENCIES:
   - MixedLib (from `./MixedLib`)
   - PureOCLib (from `./PureOCLib`)
+  - PureOCLib2 (from `./PureOCLib2`)
   - PureSwiftLib (from `./PureSwiftLib`)
+  - PureSwiftLib2 (from `./PureSwiftLib2`)
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
 
 EXTERNAL SOURCES:
   MixedLib:
     :path: "./MixedLib"
   PureOCLib:
     :path: "./PureOCLib"
+  PureOCLib2:
+    :path: "./PureOCLib2"
   PureSwiftLib:
     :path: "./PureSwiftLib"
+  PureSwiftLib2:
+    :path: "./PureSwiftLib2"
 
 SPEC CHECKSUMS:
-  MixedLib: 12132325d2e2201b0cd5d7932a3af6d056d60a92
-  PureOCLib: 682674e80d61d75382a355764590537aebe0864b
+  CocoaLumberjack: b7e05132ff94f6ae4dfa9d5bce9141893a21d9da
+  MixedLib: 67ed035c9c7dd62696ab6b025a92f95a269e58b0
+  PureOCLib: a7f1c9e85a8caeb26c79e8a8ac010894bc278a40
+  PureOCLib2: 57c9aadc3f87adb493b8fdaa8165729a8d30882d
   PureSwiftLib: 67aa48494d56e6f784762f1c740f4bb4c7d64a67
+  PureSwiftLib2: a415a2027dcd41e68394a86497488b0458e104da
 
-PODFILE CHECKSUM: aa9a9d5b8b1c079d793d931fad05c55253c7a402
+PODFILE CHECKSUM: 3fd804664be8630818de57de1b4df8c19c50d0e5
 
 COCOAPODS: 1.11.2

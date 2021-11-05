@@ -9,21 +9,22 @@ import Foundation
 import PureOCLib
 import PureSwiftLib
 import MixedLib
+import CocoaLumberjack
 
 @objc class HelloWorld: NSObject {
     
     @objc func hello() {
         //项目中使用OC
-        print(Outdate.warning())
+        Outdate.warning()
         
-        print("Hello, Swift!")
+        DDLogInfo("Hello, Swift!")
         
-        print(PureOCLibVersion.ver())
+        PureOCLibVersion.ver()
         
-        print(PureSwiftVersion.ver())
+        PureSwiftVersion.ver()
         
-        print(MixedOCVersion.ver())
+        MixedOCVersion.ver()
         
-        print(MixedSwiftVersion.ver())
+        MixedSwiftVersion.ver()
     }
 }
