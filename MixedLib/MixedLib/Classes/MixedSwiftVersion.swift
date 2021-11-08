@@ -9,8 +9,8 @@ import Foundation
 import CocoaLumberjack
 
 @objc public class MixedSwiftVersion: NSObject {
-    @objc public class func ver() -> Void {
-        MixedOCVersion.ver()
-        DDLogDebug("0.1.0 （swift in Mixed Lib）")
+    @objc public class func ver(_ tip: String) -> Void {
+        DDLogDebug(tip)
+        MixedOCVersion.ver("混编库中swift使用oc库")
     }
 }

@@ -24,19 +24,21 @@
     // Do any additional setup after loading the view.
     
     // 项目中使用swift
-    [[[HelloWorld alloc] init] hello];
+    [[[HelloWorld alloc] init] hello:@"项目中oc使用swift"];
     
     // 使用纯OC库
-    [PureOCLibVersion ver];
+    [PureOCLibVersion ver:@"项目中oc使用纯OC库"];
     
     // 使用纯Swift库
-    [PureSwiftVersion ver];
+    [PureSwiftVersion ver:@"项目中oc使用纯Swift库"];
+    //TODO: [PureSwiftVersion base64test];
+    
     
     // 使用混编库中的OC
-    [MixedOCVersion ver];
+    [MixedOCVersion ver:@"项目中oc使用混编库oc"];
     
     // 使用混编库中的swift
-    [MixedSwiftVersion ver];
+    [MixedSwiftVersion ver:@"项目中oc使用混编库swift"];
     
 }
 

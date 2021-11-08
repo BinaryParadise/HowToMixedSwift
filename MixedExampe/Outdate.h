@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Outdate : NSObject
 
-+ (void)warning;
++ (void)warning:(NSString *)tip;
 
 @end
 

@@ -13,18 +13,17 @@ import CocoaLumberjack
 
 @objc class HelloWorld: NSObject {
     
-    @objc func hello() {
+    @objc func hello(_ tip: String) {
+        DDLogDebug(tip)
         //项目中使用OC
-        Outdate.warning()
+        Outdate.warning("项目中swift使用oc")
+                
+        PureOCLibVersion.ver("项目中swift使用OC库")
         
-        DDLogInfo("Hello, Swift!")
+        PureSwiftVersion.ver("项目中swift使用swift库")
         
-        PureOCLibVersion.ver()
+        MixedOCVersion.ver("项目中swift使用混编库oc")
         
-        PureSwiftVersion.ver()
-        
-        MixedOCVersion.ver()
-        
-        MixedSwiftVersion.ver()
+        MixedSwiftVersion.ver("项目中swift使用混编库swift")
     }
 }

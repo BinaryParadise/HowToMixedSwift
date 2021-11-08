@@ -12,8 +12,8 @@ static DDLogLevel ddLogLevel = DDLogLevelAll;
 
 @implementation Outdate
 
-+ (void)warning {
-    DDLogDebug(@"Objective-C is outdated!");
++ (void)warning:(NSString *)tip {
+    DDLogDebug(tip);
 }
 
 @end

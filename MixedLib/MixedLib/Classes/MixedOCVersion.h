@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MixedOCVersion : NSObject
 
-+ (void)ver;
++ (void)ver:(NSString *)tip;
 
 @end
 

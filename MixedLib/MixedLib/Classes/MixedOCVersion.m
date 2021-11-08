@@ -15,11 +15,11 @@ static DDLogLevel ddLogLevel = DDLogLevelAll;
 @implementation MixedOCVersion
 
 + (void)load {
-    [MixedSwiftVersion ver];
+    [MixedSwiftVersion ver:@"混编库中oc使用swift"];
 }
 
-+ (void)ver {
-    DDLogDebug(@"0.1.0 （OC in Mixed Lib）");
++ (void)ver:(NSString *)tip {
+    DDLogDebug(tip);
 }
 
 @end

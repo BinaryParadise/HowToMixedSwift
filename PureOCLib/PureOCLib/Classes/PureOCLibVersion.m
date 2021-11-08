@@ -14,9 +14,9 @@ static DDLogLevel ddLogLevel = DDLogLevelAll;
 
 @implementation PureOCLibVersion
 
-+ (void)ver {
-    DDLogDebug(@"0.1.0 （Pure OC Lib）");
-    [PureSwiftVersion2 ver];
++ (void)ver:(NSString *)tip {
+    DDLogDebug(@"%@", tip);
+    [PureSwiftVersion2 ver:@"oc库中使用swift库"];
 }
 
 @end

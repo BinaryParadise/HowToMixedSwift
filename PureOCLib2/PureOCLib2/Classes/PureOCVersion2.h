@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PureOCVersion2 : NSObject
 
-+ (NSString *)ver;
++ (NSString *)ver:(NSString *)tip;
 
 @end
 

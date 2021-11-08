@@ -9,8 +9,8 @@
 
 @implementation PureOCVersion2
 
-+ (NSString *)ver {
-    return @"0.1.0 （Pure OC Lib 2）";
++ (NSString *)ver:(NSString *)tip {
+    return tip;
 }
 
 @end
