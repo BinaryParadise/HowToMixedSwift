@@ -10,6 +10,7 @@ import PureOCLib
 import PureSwiftLib
 import MixedLib
 import CocoaLumberjack
+import Canary
 
 @objc class HelloWorld: NSObject {
     
@@ -25,5 +26,11 @@ import CocoaLumberjack
         MixedOCVersion.ver("项目中swift使用混编库oc")
         
         MixedSwiftVersion.ver("项目中swift使用混编库swift")
+    }
+}
+
+@objc class CanaryTTYLogger: DDAbstractLogger {
+    public override func log(message logMessage: DDLogMessage) {
+        CanaryManager.shared.storeLogMessage(dict: logMessage.dictionaryWithValues(forKeys: CanaryManager.StoreLogKeys), timestamp: logMessage.timestamp.timeIntervalSince1970)
     }
 }

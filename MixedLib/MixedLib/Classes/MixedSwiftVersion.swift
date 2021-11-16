@@ -10,7 +10,7 @@ import CocoaLumberjack
 
 @objc public class MixedSwiftVersion: NSObject {
     @objc public class func ver(_ tip: String) -> Void {
-        DDLogDebug(tip)
+        DDLogError(tip)
         MixedOCVersion.ver("混编库中swift使用oc库")
     }
 }

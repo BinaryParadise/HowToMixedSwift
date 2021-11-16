@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '10.0'
 
 source 'https://cdn.cocoapods.org'
 
@@ -9,6 +9,7 @@ target 'MixedExampe' do
   use_modular_headers!
 
   # Pods for MixedExampe
+  pod 'Canary', :path => '../Canary'
   pod 'PureOCLib', :path => './PureOCLib'
   pod 'PureSwiftLib', :path => './PureSwiftLib'
   pod 'MixedLib', :path => './MixedLib'

@@ -11,6 +11,8 @@
 @import PureSwiftLib;
 @import MixedLib;
 
+static DDLogLevel ddLogLevel = DDLogLevelAll;
+
 @interface ViewController ()
 
 @property (nonatomic, assign, readonly) NSInteger t;
@@ -22,7 +24,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (IBAction)onClick:(id)sender {
     
+    DDLogError(@"混编库");
+    DDLogWarn(@"纯oc库");
+    DDLogDebug(@"纯swift库");
+    DDLogInfo(@"================================================================================================");
     // 项目中使用swift
     [[[HelloWorld alloc] init] hello:@"项目中oc使用swift"];
     
@@ -39,8 +48,6 @@
     
     // 使用混编库中的swift
     [MixedSwiftVersion ver:@"项目中oc使用混编库swift"];
-    
 }
-
 
 @end

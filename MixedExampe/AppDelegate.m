@@ -7,7 +7,9 @@
 
 #import "AppDelegate.h"
 #import "LoggerFormat.h"
+#import "MixedExampe-Swift.h"
 @import CocoaLumberjack;
+@import Canary;
 
 static DDLogLevel ddLogLevel = DDLogLevelAll;
 
@@ -19,9 +21,17 @@ static DDLogLevel ddLogLevel = DDLogLevelAll;
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // Override point for customization after application launch.    
+    
+    CanaryManager.shared.baseURL = @"http://47.96.176.109";
+    CanaryManager.shared.appSecret = @"82e439d7968b7c366e24a41d7f53f47d";
+    CanaryManager.shared.deviceId = UIDevice.currentDevice.identifierForVendor.UUIDString;
+    [DDLog.sharedInstance addLogger:CanaryTTYLogger.new];
     [DDLog.sharedInstance addLogger:DDTTYLogger.sharedInstance];
     DDTTYLogger.sharedInstance.logFormatter = LoggerFormat.new;
+    [CanaryManager.shared startLoggerWithDomain:nil customProfile:^NSDictionary<NSString *,id> * _Nonnull{
+        return @{};
+    }];
     return YES;
 }
 
